@@ -1,13 +1,19 @@
 import { Heading } from "@chakra-ui/react";
-import CollegeCardSection from "./sections/CollegeCardSection";
-import ImageGallerySection from "./sections/ImageGallerySection";
+import CollegeCards from "./sections/CollegeCards";
+import ImageGallery from "./sections/ImageGallery";
+import ResearchPapers from "./sections/ResearchPapers";
+import Reviews from "./sections/Reviews";
 
 const Home = () => {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <CollegeCardSection />
+      <CollegeCards />
       <Heading className="my-20 text-center">Image Gallary</Heading>
-      <ImageGallerySection />
+      <ImageGallery />
+      <Heading className="my-20 text-center">Research Papers</Heading>
+      <ResearchPapers />
+      <Heading className="my-20 text-center"> Reviews</Heading>
+      <Reviews />
     </div>
   );
 };

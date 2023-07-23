@@ -32,6 +32,12 @@ const Header = () => {
   ) : (
     <button className={`${linkstyle} `}>Logout</button>
   );
+
+  const profile = (
+    <Link to="/profile" className={linkstyle}>
+      Profile
+    </Link>
+  );
   return (
     <div>
       <nav className="bg-gray-800 ">
@@ -48,7 +54,9 @@ const Header = () => {
             </div>
             <div>
               <div className=" hidden lg:flex gap-5 items-center text-white font-semibold text-lg">
+               
                 {navItems}
+                {profile}
                 {isLogin}
               </div>
               <div className=" lg:hidden   ">
@@ -57,7 +65,7 @@ const Header = () => {
                     Menu
                   </MenuButton>
                   <MenuList className="flex flex-col ">
-                    {navItems} {isLogin}
+                  {profile}  {navItems} {isLogin}
                   </MenuList>
                 </Menu>
               </div>

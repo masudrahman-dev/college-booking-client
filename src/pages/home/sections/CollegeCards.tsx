@@ -36,8 +36,8 @@ const collegesData = [
   // Add more college data as needed
 ];
 
-const CollegeCardSection = () => {
-    console.log('c');
+const CollegeCards = () => {
+  console.log("c");
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
       {collegesData.map((college, index) => (
@@ -47,4 +47,4 @@ const CollegeCardSection = () => {
   );
 };
 
-export default CollegeCardSection;
+export default CollegeCards;
