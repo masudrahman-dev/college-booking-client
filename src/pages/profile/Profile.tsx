@@ -41,19 +41,18 @@ const Profile: React.FC = () => {
   };
 
   return (
-    <>
-      {/* user details  */}
-      <div>
-
+    <div className="max-w-screen-xl mx-auto ">
+      <div className="text-center">
         <p>Name: "John Doe"</p>
         <p>email: "john@example.com"</p>
         <p>university: "Sample University"</p>
         <p>address: "123 Street, City"</p>
+        {/* Edit */}
+        <Button colorScheme="blue" size="lg" type="submit" mt="4">
+          Edit
+        </Button>
       </div>
-      {/* Edit */}
-      <Button colorScheme="blue" size="lg" type="submit" mt="4">
-        Edit
-      </Button>
+
       <Box m="4" mx="auto" maxW="600px">
         <Heading as="h1" size="xl" textAlign="center" mb="8">
           Profile Details
@@ -101,7 +100,7 @@ const Profile: React.FC = () => {
           </Button>
         </VStack>
       </Box>
-    </>
+    </div>
   );
 };
 

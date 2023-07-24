@@ -48,6 +48,25 @@ const collegesData: College[] = [
     sports: "Cricket, Badminton, Chess",
     imageUrl: "https://via.placeholder.com/400",
   },
+  {
+    id: 5,
+    name: "Sample College 2",
+    admissionDates: "July 20 - August 10",
+    events: "Cultural Week, Tech Symposium",
+    researchHistory: "Established in 1970, leading research in Technology",
+    sports: "Cricket, Badminton, Chess",
+    imageUrl: "https://via.placeholder.com/400",
+  },
+  {
+    id: 6,
+    name: "Sample College 2",
+    admissionDates: "July 20 - August 10",
+    events: "Cultural Week, Tech Symposium",
+    researchHistory: "Established in 1970, leading research in Technology",
+    sports: "Cricket, Badminton, Chess",
+    imageUrl: "https://via.placeholder.com/400",
+  },
+
   // Add more college data as needed
 ];
 
