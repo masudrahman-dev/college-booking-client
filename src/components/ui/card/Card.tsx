@@ -10,18 +10,17 @@ type CardProps = {
     researchHistory: string;
     sports: string;
     imageUrl: string;
+    id: number;
   };
 };
 
 const Card: React.FC<CardProps> = ({ college }) => {
-
-
-
-
   return (
     <div className="bg-white shadow-lg rounded-lg p-4">
       <img
-        src={college.imageUrl}
+        src={
+          "https://source.unsplash.com/user/c_v_r/1600x900" || college.imageUrl 
+        }
         alt={college.name}
         className="w-full h-40 object-cover rounded-t-lg"
       />
@@ -32,7 +31,7 @@ const Card: React.FC<CardProps> = ({ college }) => {
         <p>Research History: {college.researchHistory}</p>
         <p>Sports: {college.sports}</p>
         <Link
-          to={`/college/${college.name}`} // Assuming you have a separate route for college details
+          to={`/colleges/${college.id}`} // Assuming you have a separate route for college details
           className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg"
         >
           Details

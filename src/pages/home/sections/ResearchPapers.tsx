@@ -35,17 +35,6 @@ const researchPapers: ResearchPaper[] = [
   // Add more research papers as needed
 ];
 
-const reviews: Review[] = [
-  {
-    collegeName: "College 1",
-    review: "This is a great college!",
-  },
-  {
-    collegeName: "College 2",
-    review: "The faculty is excellent.",
-  },
-  // Add more reviews as needed
-];
 
 const ResearchPapers: React.FC = () => {
   return (
