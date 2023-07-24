@@ -21,6 +21,21 @@ const Items = [
 ];
 
 const Header = () => {
+  // const [user, setUser] = useState(null);
+
+  // Listen for changes in authentication state
+  // auth.onAuthStateChanged((user) => {
+  //   if (user) {
+  //     // User is logged in
+  //     setUser(user);
+  //   } else {
+  //     // User is logged out
+  //     setUser(null);
+  //   }
+  // });
+
+  // ================================
+
   const linkstyle = "  p-3 lg:px-0 hover:text-rose-600 text-start";
   const navItems = Items.map((item) => (
     <Link key={item.label} to={item.path} className={linkstyle}>
@@ -28,7 +43,9 @@ const Header = () => {
     </Link>
   ));
   const isLogin = true ? (
-    <button className={`${linkstyle} `}>Login</button>
+    <Link to="/login" className={`${linkstyle} `}>
+      Login
+    </Link>
   ) : (
     <button className={`${linkstyle} `}>Logout</button>
   );
@@ -54,7 +71,6 @@ const Header = () => {
             </div>
             <div>
               <div className=" hidden lg:flex gap-5 items-center text-white font-semibold text-lg">
-               
                 {navItems}
                 {profile}
                 {isLogin}
@@ -65,7 +81,7 @@ const Header = () => {
                     Menu
                   </MenuButton>
                   <MenuList className="flex flex-col ">
-                  {profile}  {navItems} {isLogin}
+                    {profile} {navItems} {isLogin}
                   </MenuList>
                 </Menu>
               </div>
