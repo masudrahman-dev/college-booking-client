@@ -26,6 +26,14 @@ const colleges: College[] = [
     name: "College 2",
     image: "	https://source.unsplash.com/user/c_v_r/1600x900",
   },
+  {
+    name: "College 3",
+    image: "	https://source.unsplash.com/user/c_v_r/1600x900",
+  },
+  {
+    name: "College 4",
+    image: "	https://source.unsplash.com/user/c_v_r/1600x900",
+  },
   // Add more colleges as needed
 ];
 

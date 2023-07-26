@@ -1,4 +1,12 @@
-import { Menu, MenuButton, MenuList } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Menu,
+  MenuButton,
+  MenuList,
+  Spacer,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import SearchField from "../ui/fields/SearchField";
 const Items = [
@@ -17,6 +25,10 @@ const Items = [
   {
     label: "My College",
     path: "/my-college",
+  },
+  {
+    label: "Dashboard",
+    path: "/dashboard",
   },
 ];
 
@@ -88,7 +100,11 @@ const Header = () => {
             </div>
           </div>
           <div className=" md:hidden">
-            <SearchField />
+            <Flex justify={"center"} className="items-center">
+              <Button colorScheme="blue">Toggle</Button>
+              <Spacer />
+              <SearchField />
+            </Flex>
           </div>
         </div>
       </nav>

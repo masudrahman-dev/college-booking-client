@@ -9,6 +9,7 @@ import Profile from "../pages/profile/Profile";
 import CollegeDetailsPage from "../pages/college/CollegeDetailsPage";
 import Login from "../pages/authPage/Login";
 import Registration from "../pages/authPage/Registration";
+import DashBoard from "../dashBoard/DashBoard";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/my-college",
         element: <MyCollege />,
+      },
+      {
+        path : "/dashboard",
+        element: <DashBoard />,
       },
       {
         path : "/profile",
